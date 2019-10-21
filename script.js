@@ -51,6 +51,21 @@ window.onload = function(){
 			block.style.backgroundColor = '#'+hex.value;
 		}
 	}
+
+	// RGBA manipulation
+	let rgbaR = document.getElementById('rgba-r');
+	let rgbaG = document.getElementById('rgba-g');
+	let rgbaB = document.getElementById('rgba-b');
+	let rgbaA = document.getElementById('rgba-a');
+
+	let rgbaCont = document.querySelector('.rgba-container');
+	let rgbaInputs = rgbaCont.querySelectorAll('input');
+
+	for(let i = 0; i < rgbaInputs.length; i++){
+		rgbaInputs[i].onchange = function(){
+			block.style.backgroundColor = 'rgba('+rgbaR.value+','+rgbaG.value+','+rgbaB.value+','+rgbaA.value+')';
+		}
+	}
 }
 
 
