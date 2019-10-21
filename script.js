@@ -14,10 +14,17 @@ window.onload = function(){
 
 	}
 
-	// Pos X manipulation
+	// Size manipulation
 	let size = document.getElementById('size');
 	size.onchange = function(){
 		block.style.transform = 'scale('+size.value+')';
+
+	// Opacity manipulation
+	let opacity = document.getElementById('opacity');
+	opacity.onchange = function(){
+		block.style.opacity = opacity.value;
+
+	}
 
 	}
 }
