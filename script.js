@@ -42,7 +42,14 @@ window.onload = function(){
 			block.style.borderRadius = '0';
 			block.style.transform = 'rotate(45deg)';
 		}
+	}
 
+	// HEX manipulation
+	let hex = document.getElementById('hex');
+	hex.onkeypress = function(e){
+		if(e.which === 13){
+			block.style.backgroundColor = '#'+hex.value;
+		}
 	}
 }
 
