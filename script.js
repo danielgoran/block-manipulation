@@ -6,4 +6,11 @@ window.onload = function(){
 	posY.onchange = function(){
 		block.style.top = posY.value+'px';
 	}
+	
+	// Pos X manipulation
+	let posX = document.getElementById('pos-x');
+	posX.onchange = function(){
+		block.style.left = posX.value+'px';
+
+	}
 }
